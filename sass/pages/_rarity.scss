@@ -1,0 +1,62 @@
+/* ============================================= */
+/* =========Styles For Rarity Page ============= */
+/* ============================================= */
+.rarity__query__search {
+    
+    &.flex {
+        
+        justify-content: space-between;
+
+        @include respond(tab-land10) {
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+}
+// sa
+.search {
+    border-style: none;
+    border-bottom: .1rem solid rgba($color-primary-dark, 0.32);
+    width: 24rem;
+
+    &.flex {
+        justify-content: space-between;
+    }
+
+    input[type=search] {
+        background: transparent;
+        color: rgba($color-primary-dark, 0.6);
+        font-family: 'Poppins';
+        font-size: 1.6rem;
+        font-weight: 400;
+        height: 100%;
+        width: 100%;
+    }
+
+    span img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+    }
+}
+
+.submit.flex {
+    gap: 2.4rem;
+
+    @include respond(phone) {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* ============= */
+/* section two  in this page*/
+.rarity__wall {
+    padding: 0 6rem 10rem;
+
+    &__cards.flex {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}

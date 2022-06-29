@@ -1,0 +1,60 @@
+/* =========================== */
+/* Styles for children charity page  */
+/* =========================== */
+
+// charity donation
+.lead {
+
+    &.flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    h3 {
+        color: $color-primary-dark;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: $color-primary-dark;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin: 0.8rem 0 1.6rem;
+    }
+
+    p {
+        color: rgba($color-primary-dark, 0.72);
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 2.2rem;
+    }
+
+    ul li {
+        color: $color-primary-dark;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 2.2rem;
+        margin-top: 4rem;
+        margin-left: 3.5rem;
+        list-style-type: disc;
+    }
+}
+
+/* wall of heroes section */
+.heroes__wall__cards {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    
+    &.flex {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}

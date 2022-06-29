@@ -1,0 +1,53 @@
+/* Cursor */
+.cursor {
+    background-color: $color-primary-dark;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    margin-left: -7.5px;
+    margin-top: -7.5px;
+    border-radius: 50%;
+    border: 2px solid $color-primary-dark;
+
+    transition: all .07s ease-out;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 2022;
+
+    &.difference {
+        background-color: $color-primary-light;
+        mix-blend-mode: difference;
+        height: 17px;
+        width: 17px;
+    }
+}
+
+.grow,
+.grow-small,
+.grow-large {
+    transform: scale(6);
+    background: $color-primary-light;
+    background: url(/Graphics/gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+    border: none;
+}
+
+.mix-lighten{
+    mix-blend-mode: lighten;
+}
+
+.mix-difference {
+    mix-blend-mode: difference;
+}
+
+.grow-small {
+    transform: scale(3);
+    ;
+}
+
+.grow-large {
+    transform: scale(7);
+}

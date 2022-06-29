@@ -1,0 +1,75 @@
+.socials {
+
+    a img {
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+
+    a:nth-child(1) {
+        margin-right: 5.4rem;
+    }
+    
+    a:nth-child(2) {
+        margin-right: 4.7rem;
+    }
+    
+}
+
+/* ****************************************** */
+/* First Section */
+/* ****************************************** */
+
+.image {
+
+    max-height: 550px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ****************************************** */
+/* Second Section */
+/* ****************************************** */
+
+.prehome__about {
+    &.grid {
+        grid-template-columns: 40% 1fr;
+        align-items: flex-start;
+
+        @include respond(tab-port) {
+            grid-template-columns: auto;
+            grid-template-rows: auto 1fr;
+            gap: 5rem;
+        }
+    }
+
+    &__left {
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    }
+
+    &__right {
+
+        &.flex {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 7rem;
+        }
+
+        &-links {
+            &.flex {
+            gap: 8rem;
+            
+            @include respond(phone) {
+                flex-wrap: wrap;
+            }
+        }
+
+        .a-btn {
+            font-size: 3rem;
+        }
+        }
+    }
+}

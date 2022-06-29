@@ -1,0 +1,51 @@
+// MEDIA QUERY MANAGER
+
+// 0 - 600px:           placeholder-shown
+// 600 - 900px:         tablet portrait
+// 900 - 1200px:        tablet landscape
+// [1200 - 1800];       desktop
+// 1800 + :             big desktop
+
+// breakpoint arguement choices:
+// -phone
+// -tab-port
+// -tab-land
+// -desktop
+// -big-desktp
+
+//ORDER: Base + Typograpgy > general layout + grid > page layout > components
+
+// 1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; //600px
+    }
+
+    @if $breakpoint == tab-port { //900px
+        @media (max-width: 56.25em) { @content };
+    }
+
+    @if $breakpoint == tab-land10 { //1000px
+        @media (max-width: 62.5em) { @content };
+    }
+
+    @if $breakpoint == tab-land { //1200px
+        @media (max-width: 75em) { @content };
+    }
+
+    @if $breakpoint == desktop14 {  //1400px
+        @media (max-width: 87.5em) { @content };
+    }
+
+    @if $breakpoint == desktop15 {  //1500px
+        @media (max-width: 93.75em) { @content };
+    }
+
+    @if $breakpoint == desktop17 { //1700px
+        @media (max-width: 106.25em) { @content };
+    }
+
+    @if $breakpoint == desktop18 { //1800px
+        @media (max-width: 112.5em) { @content };
+    }
+}

@@ -1,0 +1,141 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// afterchanges
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Delius&family=Delius+Swash+Caps&family=Fresca&family=Fuzzy+Bubbles:wght@400;700&display=swap');
+// fonts can be used here
+// font-family: 'Comic Neue', cursive;
+// font-family: 'Delius', cursive;
+// font-family: 'Delius Swash Caps', cursive;
+// font-family: 'Fresca', sans-serif;
+// font-family: 'Fuzzy Bubbles', cursive;
+
+
+// base typography
+body {
+    font-family: 'Delius', cursive;
+    // font-family: 'Delius Swash Caps', cursive;
+    // font-family: 'Fresca', sans-serif;
+    // font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+textarea {
+    font-family: 'Delius', cursive;
+    font-weight: 700;
+}
+
+
+// headings
+.heading {
+
+    h1 {
+        font-size: 7.2rem;
+
+        &:nth-child(3) {
+            line-height: .7;
+            margin-bottom: 4rem;
+        }
+
+        @include respond(desktop15) {
+            font-size: 6rem;
+        }
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        font-weight: 400;
+
+        // @include respond(desktop15) {
+        //     font-size: 2rem;
+        // }
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    &.flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+
+// heading2
+// h1.heading2 {
+//     font-weight: 700;
+//     font-size: 7.2rem;
+
+//     @include respond(desktop15) {
+//         font-size: 6rem;
+//     }
+
+//     span {
+//         color: $color-goals;
+//         margin-right: 1.5rem;
+//         text-shadow: -.1rem .1rem 0 $color-primary-dark, .1rem .1rem 0 $color-primary-dark, .1rem -.1rem 0 $color-primary-dark, -.1rem -.1rem 0 $color-primary-dark;
+//     }
+// }
+
+/* paragraphs */
+.leading-paragrapgh {
+    color: rgba($color-primary-dark, .72);
+    font-family: 'Delius', cursive;
+    // font-family: 'Delius Swash Caps', cursive;
+    // font-family: 'Fresca', sans-serif;
+    // font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2.2rem;
+    line-height: 182%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// for important dates
+.date {
+    font-family: 'Comic Neue', cursive;
+    color: $color-primary-dark;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+// homepage section roadmap
+// text from road map 
+#roadmap .__item .text b {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#roadmap .__item .text span {
+    font-family: 'Delius', cursive;
+    font-weight: 400;
+    font-size: 1.6rem;
+}

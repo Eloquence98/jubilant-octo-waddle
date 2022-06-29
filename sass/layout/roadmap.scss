@@ -1,0 +1,16 @@
+.roadmap__wrapper {
+    overflow-x: hidden;
+}
+
+.roadmap-swiper {
+    .swiper-wrapper {
+        position: relative;
+        left: -36%;
+        overflow: visible;
+    }
+
+    .swiper-pagination {
+        bottom: -80px;
+        width: unset;
+    }
+}

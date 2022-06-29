@@ -1,0 +1,112 @@
+/* ================================ */
+/* =======card */
+/* ================================ */
+.card {
+  background: $color-primary-dark;
+  border-radius: 2rem;
+  max-height: 44.2rem;
+  max-width: 40.6rem;
+  padding: 2rem;
+
+  &__top {
+    border-radius: 2rem;
+    height: 31.8rem;
+    width: 36.6rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__bottom {
+    margin-left: 1.7rem;
+
+    h5 {
+      color: $color-primary-light;
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1.6rem;
+    }
+
+    p,
+    span {
+      color: $color-primary-light;
+      font-family: 'Poppins';
+      font-weight: 300;
+      font-size: 1.4rem;
+      opacity: 0.8rem;
+    }
+
+    &__inner {
+
+      &.flex {
+        justify-content: flex-start;
+        gap: 3.2rem;
+      }
+
+      div img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+      }
+
+    }
+  }
+}
+
+.push-top {
+  position: relative;
+  top: -5rem;
+}
+
+// ========
+// card3
+// ========
+
+.card3 {
+  padding: 2rem;
+  width: 31.2rem;
+  height: 18rem;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: -.8rem .8rem 2.4rem rgba(145, 141, 255, 0.16);
+
+  &__headings {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 6px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 19px;
+    
+      color: #141414;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 17px;
+    
+      color: rgba(20, 20, 20, 0.8);
+    }
+  }
+
+  &__line {
+    margin: 1.6rem 0;
+    border: 2px solid #E0DFFF;
+    border-radius: 1rem;
+  }
+
+  &__details p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 20px;
+  
+    color: rgba(20, 20, 20, 0.72);
+  }
+
+  
+}

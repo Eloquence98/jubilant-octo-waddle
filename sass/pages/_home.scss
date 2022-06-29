@@ -1,0 +1,284 @@
+/* section one */
+/* showcase */
+.showcase {
+
+    &__links.flex {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+
+    &__hero {
+        height: 68rem;
+        overflow: hidden;
+
+        &-image {
+            background-image: url(/Graphics/Images/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            line-height: 70vh
+        }
+    }
+}
+
+/* section two */
+/* Goals */
+.goals__inn.grid {
+    @include respond(tab-land10) {
+        //width < 1000?
+        grid-template-columns: 80% 15%;
+    }
+
+    @include respond(tab-port) {
+        //width < 900?
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* section three */
+/* charity */
+.charity {
+
+    &__img {
+        max-height: 50.1rem;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__details {
+
+        &.grid {
+            @include respond(tab-port) {
+                //width < 900?
+                grid-template-columns: auto;
+                gap: 5rem;
+            }
+        }
+
+        &-about {
+            p:nth-child(1) {
+                font-weight: 400;
+                font-size: 1.6rem;
+                /* identical to box height */
+            }
+
+            p:nth-child(2) {
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin: 1rem 0 1.6rem;
+            }
+
+            p:nth-child(3) {
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+        }
+
+        &-paragrapgh {
+            p {
+                margin-bottom: 7rem;
+            }
+        }
+    }
+}
+
+// section four
+// NFTs
+.NFTs__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .skewElem {
+        max-width: 420px;
+        max-height: 420px;
+    }
+}
+
+// here this is a mess do not even wants to touch it let's go to section six
+/* section five ================ */
+/* roadmap ===================== */
+/* ============================= */
+
+/* ============================= */
+//  roadmap code comehere
+/* ============================= */
+
+// .roadmap__wrapper {
+//     overflow-x: hidden;
+// }
+
+/* ============================= */
+/* end of road map */
+/* ============================= */
+
+
+/* section six */
+/* team members */
+.swiper-slider {
+    position: relative;
+    width: 100%;
+}
+
+.member-swiper {
+    .swiper-wrapper {
+        width: 77%;
+    }
+
+    .swiper-pagination {
+        bottom: -70px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    overflow: visible;
+
+    &-pagination-bullet-active {
+        background-color: $color-primary-dark;
+    }
+}
+
+.swiper-slide {
+    width: 35rem;
+}
+
+.members__cards {
+    text-align: center;
+
+    &.flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &-img {
+        margin-bottom: 4rem;
+    }
+
+    h4 {
+        color: $color-primary-dark;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 2.4rem;
+    }
+
+    p {
+        color: $color-primary-dark;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 1.8rem;
+        margin: 0.8rem 0 1.6rem;
+    }
+
+    a {
+        margin: 0 1.2rem;
+
+        span {
+            img {
+                height: 3.2rem;
+                width: 3.2rem;
+            }
+        }
+    }
+
+    &-img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        width: 32rem;
+        height: 32rem;
+
+        &.one {
+            background-image: url(/Graphics/Images/BabyApes/111.png);
+        }
+
+        &.two {
+            background-image: url(/Graphics/Images/BabyApes/future_12.png);
+        }
+
+        &.three {
+            background-image: url(/Graphics/Images/BabyApes/298.png);
+        }
+    }
+}
+
+/* section seven */
+/* FAQ */
+.faq {
+    &.container {
+        padding-top: 16rem;
+        padding-bottom: 10rem;
+
+        @include respond(tab-port) {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        @include respond(phone) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    &__faqs-qa {
+        font-family: 'Poppins';
+        color: $color-primary-light;
+        border-style: none;
+        border-bottom: .1rem solid rgba(255, 255, 255, 0.48);
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        padding-right: 25px;
+        position: relative;
+
+        transition: all 0.5s ease-in;
+
+        h3 {
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin-bottom: 1.6rem;
+            margin-top: 6rem;
+        }
+
+        p {
+            color: $color-primary-light;
+            font-weight: 300;
+            font-size: 1.6rem;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: underline;
+            color: $color-primary-light;
+        }
+    }
+}
+
+/* icons inside faq as footer */
+.faq.container .faq-heading.heading.flex {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    &.flex {
+        gap: 6rem;
+    }
+
+    a {
+        img {
+            height: 3.2rem;
+            width: 3.2rem;
+        }
+    }
+}

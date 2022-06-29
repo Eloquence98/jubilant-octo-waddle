@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    // this defines what 1rem is
+    font-size: 75%; //1rem = 12, 12/16
+    /* this should work on safari latest version 15.4 (March 14, 2022) */
+    scroll-behavior: smooth;
+
+    @include respond(desktop) {
+        font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    }
+
+    @include respond(tab-land) { //width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) {  //width < 900?
+        font-size: 50%;  //1 rem = 8px, 8/16 == 50%
+    }
+}
+
+body {
+    background-color: rgb(191, 239, 255);
+    box-sizing: border-box;
+    color: $color-primary-dark;
+    max-width: 192rem;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    cursor: none;
+
+    transition: background 1.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: none;
+    }
+}
+
+button {
+    outline: none;
+    border: none;
+
+    &:hover {
+        cursor: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+/* still can be used if want to */
+/* input::-webkit-input-placeholder { color: #fff;}
+input:-moz-placeholder { color: #fff;}
+input::-moz-placeholder { color: #fff;}
+input:-ms-input-placeholder { color: #fff;}
+
+textarea::-webkit-input-placeholder { color: #fff;}
+textarea:-moz-placeholder { color: #fff;}
+textarea::-moz-placeholder { color: #fff;}
+textarea:-ms-input-placeholder { color: #fff;}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; } */
+
+section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
