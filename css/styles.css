@@ -921,6 +921,89 @@ textarea {
   width: unset;
 }
 
+/* =========================== */
+/* Styles for children charity page  */
+/* =========================== */
+.lead.flex {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.lead:first-of-type {
+  margin-top: 0;
+}
+.lead h3 {
+  color: #141414;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.lead h2 {
+  color: #141414;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin: 0.8rem 0 1.6rem;
+}
+.lead p {
+  color: rgba(20, 20, 20, 0.72);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.lead ul li {
+  color: #141414;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin-top: 4rem;
+  margin-left: 3.5rem;
+  list-style-type: disc;
+}
+
+/* wall of heroes section */
+.heroes__wall__cards {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.heroes__wall__cards.flex {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* section one */
+/* showcase */
+.showcase__links.flex {
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.showcase__hero {
+  height: 68rem;
+  overflow: hidden;
+}
+.showcase__hero-image {
+  background-image: url(/Graphics/Images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  line-height: 70vh;
+}
+
+/* section two */
+/* Goals */
+@media (max-width: 62.5em) {
+  .goals__inn.grid {
+    grid-template-columns: 80% 15%;
+  }
+}
+@media (max-width: 56.25em) {
+  .goals__inn.grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .goals__inner.flex {
   flex-direction: column;
   justify-content: flex-start;
@@ -1007,89 +1090,6 @@ textarea {
   width: 30rem;
   max-width: 30rem;
   max-height: 30rem;
-}
-
-/* =========================== */
-/* Styles for children charity page  */
-/* =========================== */
-.lead.flex {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.lead:first-of-type {
-  margin-top: 0;
-}
-.lead h3 {
-  color: #141414;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-}
-.lead h2 {
-  color: #141414;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 2.8rem;
-  margin: 0.8rem 0 1.6rem;
-}
-.lead p {
-  color: rgba(20, 20, 20, 0.72);
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 2.2rem;
-}
-.lead ul li {
-  color: #141414;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 2.2rem;
-  margin-top: 4rem;
-  margin-left: 3.5rem;
-  list-style-type: disc;
-}
-
-/* wall of heroes section */
-.heroes__wall__cards {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
-.heroes__wall__cards.flex {
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-/* section one */
-/* showcase */
-.showcase__links.flex {
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-.showcase__hero {
-  height: 68rem;
-  overflow: hidden;
-}
-.showcase__hero-image {
-  background-image: url(/Graphics/Images/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  line-height: 70vh;
-}
-
-/* section two */
-/* Goals */
-@media (max-width: 62.5em) {
-  .goals__inn.grid {
-    grid-template-columns: 80% 15%;
-  }
-}
-@media (max-width: 56.25em) {
-  .goals__inn.grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* section three */
