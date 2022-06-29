@@ -39,7 +39,7 @@ body {
   background-color: rgb(191, 239, 255);
   box-sizing: border-box;
   color: #141414;
-  max-width: 192rem;
+  max-width: 160rem;
   margin: 0 auto;
   overflow: auto;
   position: relative;
@@ -1131,11 +1131,11 @@ textarea {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 2rem;
 }
 .NFTs__thumbnail .skewElem {
-  max-width: 420px;
-  max-height: 420px;
+  max-width: 35rem;
+  max-height: 35rem;
 }
 
 /* section five ================ */
@@ -1245,7 +1245,7 @@ textarea {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.48);
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  padding-right: 25px;
+  padding-right: 2.1rem;
   position: relative;
   transition: all 0.5s ease-in;
 }
