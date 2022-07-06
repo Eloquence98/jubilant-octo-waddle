@@ -911,12 +911,15 @@ textarea {
   overflow-x: hidden;
 }
 
-.roadmap-swiper .swiper-wrapper {
+.roadmap-swiper-wrapper {
+  overflow: visible;
+}
+.roadmap-swiper-wrapper .roadmap-swiper .swiper-wrapper {
   position: relative;
   left: -36%;
   overflow: visible;
 }
-.roadmap-swiper .swiper-pagination {
+.roadmap-swiper-wrapper .roadmap-swiper .swiper-pagination {
   bottom: -80px;
   width: unset;
 }
@@ -1153,6 +1156,13 @@ textarea {
   width: 100%;
 }
 
+.member-swiper-wrapper {
+  overflow: hidden;
+}
+
+.member-swiper {
+  overflow: hidden;
+}
 .member-swiper .swiper-wrapper {
   width: 77%;
 }

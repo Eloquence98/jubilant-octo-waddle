@@ -127,7 +127,7 @@
 
 .slide__img__community {
     background: url(/Graphics/Images/BabyApes/015.png);
-    
+
 }
 
 .slide__img__future {
@@ -237,8 +237,12 @@
     position: relative;
     width: 100%;
 }
-
+.member-swiper-wrapper {
+    overflow: hidden;
+}
 .member-swiper {
+    overflow: hidden;
+
     .swiper-wrapper {
         width: 77%;
     }

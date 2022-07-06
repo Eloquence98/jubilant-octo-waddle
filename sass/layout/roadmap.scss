@@ -2,15 +2,19 @@
     overflow-x: hidden;
 }
 
-.roadmap-swiper {
-    .swiper-wrapper {
-        position: relative;
-        left: -36%;
-        overflow: visible;
-    }
+.roadmap-swiper-wrapper {
+    overflow: visible;
 
-    .swiper-pagination {
-        bottom: -80px;
-        width: unset;
+    .roadmap-swiper {
+        .swiper-wrapper {
+            position: relative;
+            left: -36%;
+            overflow: visible;
+        }
+
+        .swiper-pagination {
+            bottom: -80px;
+            width: unset;
+        }
     }
 }
