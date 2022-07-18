@@ -6,6 +6,7 @@ const ejs = require("ejs");
 
 const app = express();
 // port
+const project = "BABC"
 const port = 3000
 // set view engine ejs or any other you prefer
 app.set("view engine", "ejs");
@@ -38,5 +39,5 @@ app.get('/', (req, res) => {
 
 // app shall listen to port 3000
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`${project} app listening on port ${port}`)
 })

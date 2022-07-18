@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/styles.css -w"
+    "compile:sass": "sass public/sass/main.scss public/css/styles.css -w"
   },
   "author": "",
   "license": "ISC",
