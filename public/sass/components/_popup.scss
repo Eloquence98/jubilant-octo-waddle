@@ -1,0 +1,64 @@
+.popup {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-primary-dark, .8);
+    z-index: 2021;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &__content {
+        width: 50vw;
+        height: 50rem;
+        background-color: $color-primary-light;
+        box-shadow: 0 2rem 4rem rgba($color-primary-dark, .2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5);
+        transition: all .4s;
+
+        &.flex {
+            flex-direction: column;
+        }
+
+        img {
+            display: block;
+            height: 25rem;
+            width: 25rem;
+        }
+    }
+
+    // open states
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        color: $color-primary-dark;
+        background-color: transparent;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        line-height: 1;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+}

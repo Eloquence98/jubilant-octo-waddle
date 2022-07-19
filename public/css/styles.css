@@ -880,6 +880,63 @@ textarea {
   transform: rotate(-135deg);
 }
 
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: 2021;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup__content {
+  width: 50vw;
+  height: 50rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(20, 20, 20, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.4s;
+}
+.popup__content.flex {
+  flex-direction: column;
+}
+.popup__content img {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup__close {
+  color: #141414;
+  background-color: transparent;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popup__close:hover {
+  color: #fff;
+}
+
 /* header */
 /* navigation bar */
 .navbar {
@@ -905,23 +962,6 @@ textarea {
   height: 8rem;
   width: 11rem;
   margin-bottom: -1.5rem;
-}
-
-.roadmap__wrapper {
-  overflow-x: hidden;
-}
-
-.roadmap-swiper-wrapper {
-  overflow: visible;
-}
-.roadmap-swiper-wrapper .roadmap-swiper .swiper-wrapper {
-  position: relative;
-  left: -36%;
-  overflow: visible;
-}
-.roadmap-swiper-wrapper .roadmap-swiper .swiper-pagination {
-  bottom: -80px;
-  width: unset;
 }
 
 /* =========================== */

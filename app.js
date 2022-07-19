@@ -38,7 +38,10 @@ app.use(express.static("public"));
 app.get('/', (req, res) => {
     const articles = variables.goalsArticles
     const thumbnails = variables.thumbnails
-    res.render("index.ejs", {thumbnails: thumbnails}
+    const roadmap = variables.roadmap
+    const team = variables.team
+    const faqs = variables.faqs
+    res.render("index.ejs", {thumbnails: thumbnails, roadmap: roadmap, team: team, faqs: faqs}
     );
 })
 

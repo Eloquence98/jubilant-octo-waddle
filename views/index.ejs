@@ -168,6 +168,7 @@
   </div>
 </section>
 
+<!-- section four -->
 <section id="NFTs" class="section page-divider rarity-bg" data-bg="#FFEE9F">
     <div class="NFTs">
         <div class="NFTs-heading heading m-bottom-14 container flex">
@@ -190,6 +191,164 @@
             <a class="a-btn underline cursor-scale small-scale" href="rarity.html">BABC Rarity Wall</a>
         </div>
 </section>
+
+
+    <!-- section five -->
+    <!-- road map and events -->
+    <section id="section-roadmap" class="section page-divider roadmap-bg" data-bg="#BFFFBE">
+      <div class="roadmap__wrapper">
+
+          <!-- Roadmap 2.0 -->
+          <div class="heading m-bottom-14 container flex">
+              <!-- <h4 class="cursor-scale small-scale">ROADMAP 2.0</h4> -->
+              <h1 class="cursor-scale large-scale">ROADMAP 2.0:</h1>
+          </div>
+
+          <div class="roadmap__roadmap2point0 container">
+              <div class="swiper-slider">
+                  <div class="swiper roadmap2point0-swiper">
+                      <div class="swiper-wrapper m-bottom-10">
+
+                        <% roadmap.forEach( map => { %>
+                          <div class="swiper-slide">
+                              <div class="card3">
+                                  <div class="card3__headings">
+                                      <h2> <%= map.date %></h2>
+                                      <h3> <%= map.heading %></h3>
+                                  </div>
+
+                                  <hr class="card3__line">
+
+                                  <div class="card3__details">
+                                      <p> <%= map.content %></p>
+                                  </div>
+                              </div>
+                          </div>
+                        <% }); %>
+
+                          <!-- swiper-wrapper closing -->
+                      </div>
+                      <!-- swiper closing -->
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- If we need navigation buttons -->
+                      <!-- <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div> -->
+                  </div>
+              </div>
+          </div>
+          <!-- after merch 2.0 -->
+          <!-- was here -->
+      </div>
+  </section>
+  
+  <!-- section six -->
+    <!-- team & staff members -->
+    <section id="team-members" class="section page-divider team-bg" data-bg="#fdfec1">
+      <div class="team container">
+          <div class="team__heading heading m-bottom-14 flex">
+              <h4 class="cursor-scale small-scale">Meet our team</h4>
+              <h1 class="cursor-scale large-scale">Team members</h1>
+          </div>
+      </div>
+      <!-- use swiper here -->
+
+
+      <div class="swiper-slider">
+          <!-- Swiper -->
+          <div class="swiper member-swiper">
+              <div class="swiper-wrapper m-bottom-10">
+                
+                <% team.forEach( member => { %>
+                  <div class="swiper-slide">
+                      <div class="members__cards flex">
+                          <div class=" <%= "members__cards-img " + member.image + " ." %> ">
+                            
+                          </div>
+                          <h4 class="uppercase"> <%= member.post %> </h4>
+                          <p><%= member.name %> </p>
+                          <div>
+                              <a class="cursor-scale small-scale" href=" <%= "https://" + member.web + "/" %>">
+                                  <span class="member-icon"><img src="Graphics/Icons/web-icon.png" alt=""></span>
+                              </a>
+                              <a class="cursor-scale small-scale" href=" <%= "" + member.insta + "" %>">
+                                  <span class="member-icon"><img src="Graphics/Icons/instagram-icon-black.png"
+                                          alt=""></span>
+                              </a>
+                              <a class="cursor-scale small-scale" href=" <%= "https://" +member.twitter+ "/" %>">
+                                  <span><img class="" src="Graphics/Icons/twitter-icon.png" alt=""></span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <% }); %>
+
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+          </div>
+      </div>
+
+
+      <div class="container flex">
+          <div class="join-team m-top-6">
+              <button class="button button-light cursor-scale blend-lighten" type="" name="" value="">
+                  <span class="button__circle"></span>
+                  <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdPFhy1bMdQk1DYVT2xN5IyyjLNhOuJ5Iae9IjcEYHmBWDRCw/viewform?usp=send_form">Join
+                      the team</a>
+              </button>
+          </div>
+      </div>
+
+  </section>
+  
+  <!-- section Seven FAQ -->
+    <!-- frequently asked questions -->
+    <section id="faq" class=" page-divider black">
+      <div class="faq container">
+          <div class="faq-heading heading flex">
+              <h1 class="cursor-scale large-scale">FAQ</h1>
+              <div class="footer__icons flex">
+                  <a href="https://discord.com/invite/nEdvxAbP7u" class="cursor-scale small-scale">
+                      <img src="Graphics/Icons/discord-icon-white.png" alt="">
+                  </a>
+                  <a href="https://twitter.com/BabyApeBoatClub" class="cursor-scale small-scale">
+                      <img src="Graphics/Icons/twitter-icon-white.png" alt="">
+                  </a>
+                  <a href="https://www.instagram.com/babyapeboatclub" class="cursor-scale small-scale">
+                      <img src="Graphics/Icons/instagram-icon-white.png" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="faq__faqs-wrapper">
+            
+            <% faqs.forEach( faq => { %>
+              <div class="faq__faqs-qa">
+                <h3 class="q"> <%= faq.question %></h3>
+                <p class="a  appear-on-click"> <%= faq.answer %> </p>
+            </div>
+            <% }); %>
+              
+
+          </div>
+      </div>
+  </section>
+
+  <!-- popup -->
+  <div class="popup" id="popup">
+      <div class="popup__content flex">
+          <a class="popup__close cursor-scale small-scale" onclick="history.back()">&times;</a>
+              
+          <h1 class="m-bottom-5">Scan QR</h1>
+          <img src="/Graphics/Images/babyapp code.png" alt="">
+      </div>
+  </div>
 
 <!-- footer -->
 <%- include("partials/footer") -%>
