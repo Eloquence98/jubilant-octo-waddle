@@ -138,7 +138,7 @@ dist
 *.scss.map
 
 #graphics
-Graphics/Images/BabyApes
+public/Graphics/Images/BabyApes
 
 #html files
 charity.html
