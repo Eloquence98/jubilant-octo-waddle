@@ -1,3 +1,4 @@
+# using template
 # Logs
 logs
 *.log
@@ -129,6 +130,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+#add more no temps
 #sass
 .sass-cache/
 *.css.map
@@ -137,3 +139,9 @@ dist
 
 #graphics
 Graphics/Images/BabyApes
+
+#html files
+charity.html
+homeindex.html
+index.html
+rarity.html
