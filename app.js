@@ -36,7 +36,10 @@ app.use(express.static("public"));
 // include this when about to diploy = process.env.PORT ||
 // listening for/from home
 app.get('/', (req, res) => {
-    res.render("index.ejs" , {goalsArticles: variables.goalsArticles});
+    const articles = variables.goalsArticles
+    const thumbnails = variables.thumbnails
+    res.render("index.ejs", {thumbnails: thumbnails}
+    );
 })
 
 // app shall listen to port 3000

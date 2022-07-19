@@ -168,5 +168,28 @@
   </div>
 </section>
 
+<section id="NFTs" class="section page-divider rarity-bg" data-bg="#FFEE9F">
+    <div class="NFTs">
+        <div class="NFTs-heading heading m-bottom-14 container flex">
+            <!-- <h4 class="cursor-scale small-scale">Created by Skurvydogg.</h4> -->
+            <h1 class="cursor-scale large-scale">Only 333 unique</h1>
+            <h1 class="cursor-scale large-scale">NFTS Created by Skurvydogg</h1>
+        </div>
+
+
+        <div class="NFTs__thumbnail">
+            <%thumbnails.forEach(thumbnail => { %>
+                <img class="skewElem"
+                alt=""
+                src=" <%= "Graphics/Images/BabyApes/" + thumbnail.apeNumber + ".png" %> ">
+            <% }) %>
+        </div>
+
+        <div class="NFTs__link container flex m-top-10">
+
+            <a class="a-btn underline cursor-scale small-scale" href="rarity.html">BABC Rarity Wall</a>
+        </div>
+</section>
+
 <!-- footer -->
 <%- include("partials/footer") -%>
