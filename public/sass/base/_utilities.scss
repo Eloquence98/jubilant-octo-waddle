@@ -30,6 +30,7 @@
 
 .section {
   color: $color-primary-dark;
+  overflow-x: hidden;
   &[data-bg="yellow"] { color: #333; }
 }
 

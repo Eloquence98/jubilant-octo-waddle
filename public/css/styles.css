@@ -216,6 +216,7 @@ textarea {
 
 .section {
   color: #141414;
+  overflow-x: hidden;
 }
 .section[data-bg=yellow] {
   color: #333;
